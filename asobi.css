@@ -1,0 +1,72 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0; /* 薄いグレーの背景 */
+    color: #333;
+    text-align: center;
+}
+
+.container {
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    width: 90%;
+}
+
+button {
+    padding: 10px 20px;
+    margin: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff; /* 青色のボタン */
+    color: white;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* ポップアップ関連のスタイル */
+#popupOverlay {
+    position: fixed; /* 画面に固定 */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7); /* 半透明の黒いオーバーレイ */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000; /* 他の要素より手前に表示 */
+}
+
+#popupContent {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    max-width: 400px;
+    width: 80%;
+}
+
+#popupQuestion {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    font-weight: bold;
+    color: #555;
+}
+
+/* ポップアップを非表示にするクラス */
+.hidden {
+    display: none !important;
+}
